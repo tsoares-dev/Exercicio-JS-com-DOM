@@ -11,23 +11,23 @@ function mudarCor2(){
   x.style.background = "red";
 };
 
-function mudarCor1(){
-  var x = document.getElementById("fname2");
-  x.style.background = "green";
-};
-function mudarCor2(){
-  var x = document.getElementById("fname2");
-  x.style.background = "red";
-};
+// function mudarCor1(){
+//   var x = document.getElementById("fname2");
+//   x.style.background = "green";
+// };
+// function mudarCor2(){
+//   var x = document.getElementById("fname2");
+//   x.style.background = "red";
+// };
 
-function mudarCor1(){
-  var x = document.getElementById("fname3");
-  x.style.background = "green";
-};
-function mudarCor2(){
-  var x = document.getElementById("fname3");
-  x.style.background = "red";
-};
+// function mudarCor1(){
+//   var x = document.getElementById("fname3");
+//   x.style.background = "green";
+// };
+// function mudarCor2(){
+//   var x = document.getElementById("fname3");
+//   x.style.background = "red";
+// };
 // 2.Crie um script onde o usuario digite num campo de formulário (text) as teclas e via function e case aconteça a separação entre letras e números , onde os mesmo devem ser exibidos em campos diferentes.
 
 // .
