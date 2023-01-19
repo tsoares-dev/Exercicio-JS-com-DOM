@@ -2,32 +2,30 @@
 // . Ao selecionar um campo o mesmo deve ter a cor verde
 // . Ao sair do campo o mesmo deve ficar com a cor vermelha
 
-function mudarCor1(){
-  var x = document.getElementById("fname1");
-  x.style.background = "green";
-};
-function mudarCor2(){
-  var x = document.getElementById("fname1");
-  x.style.background = "red";
-};
-
+//PARA UM CAMPO APENAS
 // function mudarCor1(){
-//   var x = document.getElementById("fname2");
+//   var x = document.getElementById("fname1");
 //   x.style.background = "green";
 // };
 // function mudarCor2(){
-//   var x = document.getElementById("fname2");
+//   var x = document.getElementById("fname1");
 //   x.style.background = "red";
 // };
 
-// function mudarCor1(){
-//   var x = document.getElementById("fname3");
-//   x.style.background = "green";
-// };
-// function mudarCor2(){
-//   var x = document.getElementById("fname3");
-//   x.style.background = "red";
-// };
+//MULTIPLOS CAMPOS
+var form = document.getElementById("form");
+var fields = form.getElementsByTagName("input");
+function mudarColor(event) {
+    if (event.type === "focus") {
+      this.style.backgroundColor = "green";
+    } else if (event.type === "blur") {
+      this.style.backgroundColor = "red";
+    }
+  }
+for (var i = 0; i < fields.length; i++) {
+  fields[i].addEventListener("focus", mudarColor);
+  fields[i].addEventListener("blur", mudarColor);
+  }
 // 2.Crie um script onde o usuario digite num campo de formulário (text) as teclas e via function e case aconteça a separação entre letras e números , onde os mesmo devem ser exibidos em campos diferentes.
 
 // .
